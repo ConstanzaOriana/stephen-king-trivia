@@ -1,0 +1,225 @@
+@font-face {
+    font-family: title;
+    src: url(/css/fonts/Curse\ of\ the\ Zombie.ttf);
+}
+
+@font-face{
+    font-family: dare;
+    src: url(/css/fonts/BloodLust.ttf);
+}
+
+
+body {
+    width: auto;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: linear-gradient(to right, rgb(66, 18, 91), rgb(13, 56, 41), rgb(20, 6, 67));
+}
+
+body::-webkit-scrollbar {
+  width: 20px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(3, 29, 94);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(119, 54, 218);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid aliceblue;  /* creates padding around scroll thumb */
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #14756b;
+  border-color: aliceblue;
+}
+
+.background {
+    width: 100vw;
+    height: auto;
+  }
+  
+  $particleSize: 20vmin;
+  $animationDuration: 6s;
+  $amount: 20;
+  .background span {
+    width: $particleSize;
+    height: $particleSize;
+    border-radius: $particleSize;
+    backface-visibility: hidden;
+    position: absolute;
+    animation-name: move;
+    animation-duration: $animationDuration;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    $colors: (
+      #1f1432,
+      #1e3f1a,
+      #1d193a
+    );
+    @for $i from 1 through $amount {
+      &:nth-child(#{$i}) {
+        color: nth($colors, random(length($colors)));
+        top: random(100) * 1%;
+        left: random(100) * 1%;
+        animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
+        animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
+        transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+        $blurRadius: (random() + 0.5) * $particleSize * 0.5;
+        $x: if(random() > 0.5, -1, 1);
+        box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
+      }
+    }
+  }
+  
+  @keyframes move {
+    100% {
+      transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+  }
+
+h1{
+    font-family: title;
+    font-size: 700%;
+    color: rgb(138, 26, 28);
+    text-align: center;
+    padding: 2%;
+}
+
+h1:hover{
+    transition: 0.50ms;
+    color: rgb(255, 255, 255); 
+
+}
+
+.can-you-p{
+    font-family: title;
+    color: #65267f;
+    font-size: 400%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #82ffc9;
+}
+
+.i-dare-button {
+    --green: #1BFD9C;
+    font-size: 300%;
+    font-family: dare;
+    margin-left: 40%;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+   }
+   
+   .i-dare-button:hover {
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+   }
+   
+   .i-dare-button:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+   }
+   
+   .i-dare-button:hover:before {
+    transform: translateX(15em);
+   }
+
+#test{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    
+}
+
+.article-test{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: #17C3B2;
+    padding: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:fantasy;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 5%;
+    color:#6b9e88;
+    
+}
+
+.option-button{
+    width: 23%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5%;
+    margin-right: auto;
+    font-family: fantasy;
+    padding: 2%;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: 1ms;
+    color: #17C3B2;
+   }
+
+   
+   .option-button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;    
+   }
+   
+   .option-button:hover::before {
+    width: 105%;
+   }
+   
+   .option-button:hover {
+    color: #111;
+    cursor: url("/css/multimedia/UF5AQGXBS5H2NH4KOLDE3SNQLQ.webp"), auto;    
+   }
+     
+.footer{
+  text-align: center;
+  margin: auto;
+  color: cornflowerblue;
+  font-family: dare;
+  font-size: large;
+}
+ 
