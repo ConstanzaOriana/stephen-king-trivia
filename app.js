@@ -1,3 +1,4 @@
+
 /*CONSTRUI ESTA PAGINA PARA HACER FUNCIONAR MEDIANTE JavaScript UNA DINAMICA DE TRIVIA
 EN DONDE EL USUARIO JUEGUE A ADIVINAR LAS RESPUESTAS CORRECTAS
 Y LUEGO EL SITIO CUENTE LA CANTIDAD DE ACIERTOS 
@@ -8,17 +9,20 @@ ARROJANDO MENSAJES DIFERENTES DE ACUERDO AL RESULTADO OBTENIDO.*/
 
 let userName = prompt("Enter your geek name");
 
-alert("WELCOME " + userName + "! " + "To start the game, let's know your top three favourite Stephen King's books");
-
-let userChoice = prompt("Your MOST favourite:");
-
+if(userName != null){
+    alert("WELCOME " + userName + "! " + "Before the game starts, let's know your top three favourite Stephen King's books");
+    let userChoice = prompt("Your MOST favourite:");
 while(userChoice != null){
     newUserChoice1 = prompt("Second favourite?:");
     newUserChoice2 = prompt("And the final one:");
+    alert("This are your GOAL top three:" + "\n" + userChoice + "\n" + newUserChoice1 + "\n" + newUserChoice2);
     break;
 }
+} else{
+    alert("Okay, let's get right to it!");
+}
 
-alert("This are your GOAL top three:" + "\n" + userChoice + "\n" + newUserChoice1 + "\n" + newUserChoice2);
+
 
 /*Practicando objeto constructor*/
 
@@ -48,7 +52,18 @@ const ten = new Quiz("What's the purpose of Johnny Smith in The Dead Zone?", "Hi
 
 console.log(seven.question)
 
+/*Arrays*/
 
+const correctAnswers = ["Bob", "The Green Mile", "Corgi", "Axe", "237", "Kathy Bates", "Chamberlain", "Church", "Blue", "Avoid nuclear war"]
+console.log(correctAnswers.includes("Blue"));
+console.log(correctAnswers.includes("Castle Rock"));
+
+alert("Besides the following antagonist characters..." + "\n" +
+"·Pennywise" + "\n" + "·Annie Wilkes" + "\n" + "·Margaret White");
+const enemiesArray = ["Pennywise", "Annie Wilkes", "Margaret White"];
+newCharacter = prompt("...name another one you whish never see the daylight ever again:");
+enemiesArray.push(newCharacter)
+console.log(enemiesArray)
 
 //EJERCICIOS DE PRACTICA EN CLASES
 
