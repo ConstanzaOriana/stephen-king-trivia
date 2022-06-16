@@ -5,20 +5,27 @@ ARROJANDO MENSAJES DIFERENTES DE ACUERDO AL RESULTADO OBTENIDO.*/
 
 /*Primero debo determinar cuales son las respuestas correctas*/
 
-const correctAnswers = ["Bob", "The Green Mile", "Corgi", "Axe", "237", "Kathy Bates", "Chamberlain", "Church", "Blue", "Avoid nuclear war"]
+
+let correct = document.getElementsByClassName("correct") ;
+correct = addEventListener("click", correctAnswers);
+
+function correctAnswers(){
+ ["Bob", "The Green Mile", "Corgi", "Axe", "237", "Kathy Bates", "Chamberlain", "Church", "Blue", "Avoid nuclear war"]
+}
+
 console.log(correctAnswers.includes("Blue"));
 console.log(correctAnswers.includes("Castle Rock"));
 
 /*Segundo debo pedirle a JS que sume 1 punto cada vez que el usuario selecciona una correcta*/
 
-if(correctAnswers = true){
-   correctAnswers = 1
+if((correct).includes(correctAnswers)){
+   number = 0;
 }
 
 /*Tercero debo pedirle a JS que sume todos los puntos obtenidos si el usuario selecciono correctas*/
 
-for((correctAnswers) = true; (correctAnswers) >= 10 ; (correctAnswers) + 1){
-    quizResult = correctAnswers;
+for((number) = 0; (number) >= 10 ; (number) + 1){
+    quizResult = number;
 }
 
 /*Cuarto debo mostrarle al usuario un mensaje de acuerdo al puntaje obtenido*/
