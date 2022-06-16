@@ -10,11 +10,10 @@ let correct = document.getElementsByClassName("correct") ;
 correct.addEventListener("click", correctAnswers);
 
 function correctAnswers(){
-let right = ["Bob", "The Green Mile", "Corgi", "Axe", "237", "Kathy Bates", "Chamberlain", "Church", "Blue", "Avoid nuclear war"]
+let right = ["Bob", "The Green Mile", "Corgi", "Axe", "237", "Kathy Bates", "Chamberlain", "Church", "Blue", "Avoid nuclear war"];
 console.log(right.includes("Blue"));
 console.log(right.includes("Castle Rock"));  
 }
-
 
 
 /*Segundo debo pedirle a JS que sume 1 punto cada vez que el usuario selecciona una correcta*/
@@ -25,8 +24,8 @@ if((correctAnswers).includes(right)){
 
 /*Tercero debo pedirle a JS que sume todos los puntos obtenidos si el usuario selecciono correctas*/
 
-for((number) = 0; (number) >= 10 ; (number) + 1){
-    quizResult = number;
+for((number) = 0; (number) <= 10 ; (number) + 1){
+    number = quizResult;
 }
 
 /*Cuarto debo mostrarle al usuario un mensaje de acuerdo al puntaje obtenido*/
