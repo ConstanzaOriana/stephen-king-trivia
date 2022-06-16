@@ -7,18 +7,19 @@ ARROJANDO MENSAJES DIFERENTES DE ACUERDO AL RESULTADO OBTENIDO.*/
 
 
 let correct = document.getElementsByClassName("correct") ;
-correct = addEventListener("click", correctAnswers);
+correct.addEventListener("click", correctAnswers);
 
 function correctAnswers(){
- ["Bob", "The Green Mile", "Corgi", "Axe", "237", "Kathy Bates", "Chamberlain", "Church", "Blue", "Avoid nuclear war"]
+let right = ["Bob", "The Green Mile", "Corgi", "Axe", "237", "Kathy Bates", "Chamberlain", "Church", "Blue", "Avoid nuclear war"]
+console.log(right.includes("Blue"));
+console.log(right.includes("Castle Rock"));  
 }
 
-console.log(correctAnswers.includes("Blue"));
-console.log(correctAnswers.includes("Castle Rock"));
+
 
 /*Segundo debo pedirle a JS que sume 1 punto cada vez que el usuario selecciona una correcta*/
 
-if((correct).includes(correctAnswers)){
+if((correctAnswers).includes(right)){
    number = 0;
 }
 
