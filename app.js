@@ -17,7 +17,7 @@ if(correctAnswers = true){
 
 /*Tercero debo pedirle a JS que sume todos los puntos obtenidos si el usuario selecciono correctas*/
 
-for((correctAnswers) = true; (correctAnswers) >= 10 ; (correctAnswers) = 1){
+for((correctAnswers) = true; (correctAnswers) >= 10 ; (correctAnswers) + 1){
     quizResult = correctAnswers;
 }
 
