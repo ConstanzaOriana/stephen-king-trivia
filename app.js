@@ -31,6 +31,7 @@ for((number) = 0; (number) <= 10 ; (number) + 1){
 /*Cuarto debo mostrarle al usuario un mensaje de acuerdo al puntaje obtenido*/
 
 let quizResult = document.getElementById("result");
+quizResult.addEventListener("click");
 
 switch(quizResult){
     case 1:
