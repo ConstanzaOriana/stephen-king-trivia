@@ -372,9 +372,32 @@ a {
   cursor: url("/css/multimedia/UF5AQGXBS5H2NH4KOLDE3SNQLQ.webp"), auto;
 }
 
+#result{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 20%;
+  border-radius: 50%;
+  color: rgb(208, 37, 37);
+  font-family: title;
+  font-size:xx-large;
+}
+
+#result:hover{
+color: #361044;
+ background-color:#245734;
+ cursor: pointer;
+ font-size: 35px;
+ transition: 0.5s;
+}
+
 .footer {
   text-align: center;
   margin: auto;
+  margin-top: 3%;
   color: cornflowerblue;
   font-family: dare;
   font-size: large;

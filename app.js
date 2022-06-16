@@ -1,69 +1,182 @@
-
 /*CONSTRUI ESTA PAGINA PARA HACER FUNCIONAR MEDIANTE JavaScript UNA DINAMICA DE TRIVIA
 EN DONDE EL USUARIO JUEGUE A ADIVINAR LAS RESPUESTAS CORRECTAS
 Y LUEGO EL SITIO CUENTE LA CANTIDAD DE ACIERTOS 
 ARROJANDO MENSAJES DIFERENTES DE ACUERDO AL RESULTADO OBTENIDO.*/
 
-
-/*Practicando algoritmo y simulador interactivo*/
-
-let userName = prompt("Enter your geek name");
-
-if(userName != null){
-    alert("WELCOME " + userName + "! " + "Before the game starts, let's know your top three favourite Stephen King's books");
-    let userChoice = prompt("Your MOST favourite:");
-while(userChoice != null){
-    newUserChoice1 = prompt("Second favourite?:");
-    newUserChoice2 = prompt("And the final one:");
-    alert("This are your GOAL top three:" + "\n" + userChoice + "\n" + newUserChoice1 + "\n" + newUserChoice2);
-    break;
-}
-} else{
-    alert("Okay, let's get right to it!");
-}
-
-
-
-/*Practicando objeto constructor*/
-
-class Quiz{
-    constructor(question, option1, option2, option3, answer){
-        this.question = question;
-        this.option1 = option1;
-        this.option2 = option2;
-        this.option3 = option3;
-        this.answer = answer;
-    }
-    resultado(){
-
-    }
-}
-
-const one = new Quiz("What's the real name of Pennywise the clown?", "It", "Charlie", "Uncle Clown", "Bob");
-const two = new Quiz("Which story has an immortal mouse?", "The Shawshank Redemption", "Geralt's Game", "Misery", "The Green Mile");
-const three = new Quiz("What type of dog communicates with dead people in Under the Dome?", "Beagle", "Golden Retriever", "Rotwailler", "Corgi");
-const four = new Quiz("What does Annie Wilkes use in Phil's legs in Misery?", "Hammer", "Bat", "Piece of metal", "Axe");
-const five = new Quiz("Which room hosted a dead woman in The Shining?", "19", "256", "34", "237");
-const six = new Quiz("Name the actor/actress that played two mayor caracthers in King's movies", "Tom Hanks", "Jeffrey Demunn", "Melissa McBride", "Kathy Bates");
-const seven = new Quiz("Where did Carrie's story took place?", "Castle Rock", "Bangor", "Derry", "Chamberlain");
-const eight = new Quiz("What's the undead cat's name in Pet Sematary?", "Stacey", "Fluffy", "Doug", "Church");
-const nine = new Quiz("Color of the Mr Mercedes virtual meet-up umbrella logo", "Red", "Yellow", "Purple", "Blue");
-const ten = new Quiz("What's the purpose of Johnny Smith in The Dead Zone?", "His dog resurrection", "Save his wife from cancer", "Become a powerful politician", "Avoid nuclear war");
-
-console.log(seven.question)
-
-/*Arrays*/
+/*Primero debo determinar cuales son las respuestas correctas*/
 
 const correctAnswers = ["Bob", "The Green Mile", "Corgi", "Axe", "237", "Kathy Bates", "Chamberlain", "Church", "Blue", "Avoid nuclear war"]
 console.log(correctAnswers.includes("Blue"));
 console.log(correctAnswers.includes("Castle Rock"));
 
-alert("Besides the following antagonist characters..." + "\n" +
-"·Pennywise" + "\n" + "·Annie Wilkes" + "\n" + "·Margaret White");
-const enemiesArray = ["Pennywise", "Annie Wilkes", "Margaret White"];
-newCharacter = prompt("...name another one you whish never see the daylight ever again:");
-enemiesArray.push(newCharacter)
-console.log(enemiesArray)
+/*Segundo debo pedirle a JS que sume 1 punto cada vez que el usuario selecciona una correcta*/
+
+if(correctAnswers = true){
+   correctAnswers = 1
+}
+
+/*Tercero debo pedirle a JS que sume todos los puntos obtenidos si el usuario selecciono correctas*/
+
+for((correctAnswers) = true; (correctAnswers) >= 10 ; (correctAnswers) = 1){
+    quizResult = correctAnswers;
+}
+
+/*Cuarto debo mostrarle al usuario un mensaje de acuerdo al puntaje obtenido*/
+
+let quizResult = document.getElementById("result");
+
+switch(quizResult){
+    case 1:
+        //La idea es que no sean alertas las que aparezcan, sino mensajes ubicados en el centro de la pantalla :)
+        alert("You really need to keep reading pal!")
+        break;
+    case 2:
+        alert("You really need to keep reading pal!")
+        break;
+    case 3:
+        alert("You really need to keep reading pal!")
+        break;
+    case 4:
+        alert("Next time don't hesitate on the reading! Keep having a good track!")
+        break;
+    case 5:
+        alert("Halfway there! Stephen is watching you")
+        break;
+    case 6:
+        alert("The number of the devil! Keep reading pal!");
+        break;
+    case 7:
+        alert("Really good mark, but let's keep reading!")
+        break;
+    case 8:
+        alert("You are trying really hard to stop reading; but let's face it: it's difficult!")
+        break;
+    case 9:
+        alert("Almooost there! You are doing great!")
+        break;
+    case 10:
+        alert("Stephen King loves you! Thanks for reading!")
+        break;
+    default:
+        alert("You have cero correct answers! Start reading before it's too late!")
+        break;    
+}
+
+
+// /*Practicando algoritmo y simulador interactivo*/
+
+// let userName = prompt("Enter your geek name");
+
+// if(userName != null){
+//     alert("WELCOME " + userName + "! " + "Before the game starts, let's know your top three favourite Stephen King's books");
+//     let userChoice = prompt("Your MOST favourite:");
+// while(userChoice != null){
+//     newUserChoice1 = prompt("Second favourite?:");
+//     newUserChoice2 = prompt("And the final one:");
+//     alert("This are your GOAL top three:" + "\n" + userChoice + "\n" + newUserChoice1 + "\n" + newUserChoice2);
+//     break;
+// }
+// } else{
+//     alert("Okay, let's get right to it!");
+// }
+
+
+// /*Practicando objeto constructor*/
+
+// class Quiz{
+//     constructor(question, option1, option2, option3, answer){
+//         this.question = question;
+//         this.option1 = option1;
+//         this.option2 = option2;
+//         this.option3 = option3;
+//         this.answer = answer;
+//     }
+//     resultado(){
+
+//     }
+// }
+
+// const one = new Quiz("What's the real name of Pennywise the clown?", "It", "Charlie", "Uncle Clown", "Bob");
+// const two = new Quiz("Which story has an immortal mouse?", "The Shawshank Redemption", "Geralt's Game", "Misery", "The Green Mile");
+// const three = new Quiz("What type of dog communicates with dead people in Under the Dome?", "Beagle", "Golden Retriever", "Rotwailler", "Corgi");
+// const four = new Quiz("What does Annie Wilkes use in Phil's legs in Misery?", "Hammer", "Bat", "Piece of metal", "Axe");
+// const five = new Quiz("Which room hosted a dead woman in The Shining?", "19", "256", "34", "237");
+// const six = new Quiz("Name the actor/actress that played two mayor caracthers in King's movies", "Tom Hanks", "Jeffrey Demunn", "Melissa McBride", "Kathy Bates");
+// const seven = new Quiz("Where did Carrie's story took place?", "Castle Rock", "Bangor", "Derry", "Chamberlain");
+// const eight = new Quiz("What's the undead cat's name in Pet Sematary?", "Stacey", "Fluffy", "Doug", "Church");
+// const nine = new Quiz("Color of the Mr Mercedes virtual meet-up umbrella logo", "Red", "Yellow", "Purple", "Blue");
+// const ten = new Quiz("What's the purpose of Johnny Smith in The Dead Zone?", "His dog resurrection", "Save his wife from cancer", "Become a powerful politician", "Avoid nuclear war");
+
+// console.log(seven.question)
+
+
+// /*Comenzando a practicar DOM*/
+
+// let nuevaVariable = document.getElementsByClassName("correct")
+// if(nuevaVariable = true){
+//         console.log("Respuesta correcta");    
+// }
+
+
+// /*Arrays*/
+
+// alert("Besides the following antagonist characters..." + "\n" +
+// "·Pennywise" + "\n" + "·Annie Wilkes" + "\n" + "·Margaret White");
+// const enemiesArray = ["Pennywise", "Annie Wilkes", "Margaret White"];
+// newCharacter = prompt("...name another one you whish never see the daylight ever again:");
+// enemiesArray.push(newCharacter)
+// console.log(enemiesArray)
+
+
+
+/*EJERCICIOS DE PRACTICA DE BOOKLET*/
+
+// let numerito = parseInt(prompt("Ingrese numero del 1 al 4"));
+// if(numerito <= 4){
+// switch(numerito){
+//     case 1:
+//         alert("Has escogido a Homero")
+//         break;
+//     case 2:
+//         alert("Has escogido a Marge")
+//         break;
+//     case 3:
+//         alert("Has escogido a Bart")
+//         break;
+//     case 4:
+//         alert("Has escogido a Lisa")
+// }
+// }else{
+//     alert("Numero no valido")
+// }
+
+// let tecla = prompt("Presione una tecla");
+// if((tecla === "Y") || (tecla === "y")){
+//     console.log("Correcto");
+// } else{
+//     console.log("Error");
+// }
+
+// let nombre= prompt("Ingrese su nombre");
+// let otroNombre = "Coty"
+// if((nombre === otroNombre( || (nombre === "coty")){
+//     alert("Yo fui");
+// }else{
+//     alert("Yo no fui");
+// }
+
+
+//let precio = Number(prompt("Ingrese precio"));
+// let operacionUno = 20 * precio;
+// let operacionDos = operacionUno / 100;
+// let result = precio - operacionDos;
+// alert("El precio con descuento queda en " + result);
+
+
+
+
+
+
 
 //EJERCICIOS DE PRACTICA EN CLASES
 
