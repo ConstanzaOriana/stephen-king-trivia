@@ -4,71 +4,116 @@ Y LUEGO EL SITIO CUENTE LA CANTIDAD DE ACIERTOS
 ARROJANDO MENSAJES DIFERENTES DE ACUERDO AL RESULTADO OBTENIDO.*/
 
 /*Primero debo determinar cuales son las respuestas correctas*/
-
-
-let correct = document.getElementsByClassName("correct") ;
-correct.addEventListener("click", correctAnswers);
-
-function correctAnswers(){
-let right = ["Bob", "The Green Mile", "Corgi", "Axe", "237", "Kathy Bates", "Chamberlain", "Church", "Blue", "Avoid nuclear war"];
-console.log(right.includes("Blue"));
-console.log(right.includes("Castle Rock"));  
-}
-
-
 /*Segundo debo pedirle a JS que sume 1 punto cada vez que el usuario selecciona una correcta*/
-
-if((correctAnswers).includes(right)){
-   number = 0;
-}
-
 /*Tercero debo pedirle a JS que sume todos los puntos obtenidos si el usuario selecciono correctas*/
-
-for((number) = 0; (number) <= 10 ; (number) + 1){
-    number = quizResult;
-}
-
 /*Cuarto debo mostrarle al usuario un mensaje de acuerdo al puntaje obtenido*/
 
-let quizResult = document.getElementById("result");
-quizResult.addEventListener("click");
+//Tambien tengo que inhabilitar que seleccione otra opcion de la misma pregunta cuando ya selecciono uno
 
-switch(quizResult){
-    case 1:
-        //La idea es que no sean alertas las que aparezcan, sino mensajes ubicados en el centro de la pantalla :)
-        alert("You really need to keep reading pal!")
-        break;
-    case 2:
-        alert("You really need to keep reading pal!")
-        break;
-    case 3:
-        alert("You really need to keep reading pal!")
-        break;
-    case 4:
-        alert("Next time don't hesitate on the reading! Keep having a good track!")
-        break;
-    case 5:
-        alert("Halfway there! Stephen is watching you")
-        break;
-    case 6:
-        alert("The number of the devil! Keep reading pal!");
-        break;
-    case 7:
-        alert("Really good mark, but let's keep reading!")
-        break;
-    case 8:
-        alert("You are trying really hard to stop reading; but let's face it: it's difficult!")
-        break;
-    case 9:
-        alert("Almooost there! You are doing great!")
-        break;
-    case 10:
-        alert("Stephen King loves you! Thanks for reading!")
-        break;
-    default:
-        alert("You have cero correct answers! Start reading before it's too late!")
-        break;    
+
+const caramelo = document.getElementsByTagName("button");
+caramelo[0].addEventListener("click", function onClick(){
+   console.log("");
+});
+for (const button of caramelo){
+    button.addEventListener("click", function onClick (){
+        button.style.backgroundColor = "purple";
+        button.style.color = "white";
+    })
 }
+
+
+let pepito = document.querySelectorAll(".correct");
+pepito.forEach( pedro =>{
+    pedro.addEventListener("click", ()=>{   
+    let contador = 0;
+    pepito.onClick = function (){
+        contador++;
+}    
+    console.log(contador);
+    })
+});
+
+
+let botones = document.querySelectorAll(".option-button");
+botones.forEach( buenas =>{
+    buenas.addEventListener("click", ()=>{
+        console.log("incorrecta");        
+    })
+});
+
+
+
+
+// let correctAnswers = ["Bob", "The Green Mile", "Corgi", "Axe", "237", "Kathy Bates", "Chamberlain", "Church", "Blue", "Avoid nuclear war"];
+// }
+// let correctOption = document.getElementsByClassName("correct");
+// correctOption.addEventListener("click", correctAnswers);
+
+// function correctAnswers(){
+//     console.log("Respuesta correcta")
+// }
+
+// function correctAnswers(){
+// let right = ["Bob", "The Green Mile", "Corgi", "Axe", "237", "Kathy Bates", "Chamberlain", "Church", "Blue", "Avoid nuclear war"];
+// console.log(right.includes("Blue"));
+// console.log(right.includes("Castle Rock"));  
+// }
+
+
+// /*Segundo debo pedirle a JS que sume 1 punto cada vez que el usuario selecciona una correcta*/
+
+// if((correctAnswers).includes(right)){
+//    let number = 0;
+// }
+
+// /*Tercero debo pedirle a JS que sume todos los puntos obtenidos si el usuario selecciono correctas*/
+
+// for((number) = 0; (number) <= 10 ; (number) + 1){
+//     number = quizResult;
+// }
+
+// /*Cuarto debo mostrarle al usuario un mensaje de acuerdo al puntaje obtenido*/
+
+// let quizResult = document.getElementById("result");
+// quizResult.addEventListener("click");
+
+// switch(quizResult){
+//     case 1:
+//         La idea es que no sean alertas las que aparezcan, sino mensajes ubicados en el centro de la pantalla :)
+//         alert("You really need to keep reading pal!")
+//         break;
+//     case 2:
+//         alert("You really need to keep reading pal!")
+//         break;
+//     case 3:
+//         alert("You really need to keep reading pal!")
+//         break;
+//     case 4:
+//         alert("Next time don't hesitate on the reading! Keep having a good track!")
+//         break;
+//     case 5:
+//         alert("Halfway there! Stephen is watching you")
+//         break;
+//     case 6:
+//         alert("The number of the devil! Keep reading pal!");
+//         break;
+//     case 7:
+//         alert("Really good mark, but let's keep reading!")
+//         break;
+//     case 8:
+//         alert("You are trying really hard to stop reading; but let's face it: it's difficult!")
+//         break;
+//     case 9:
+//         alert("Almooost there! You are doing great!")
+//         break;
+//     case 10:
+//         alert("Stephen King loves you! Thanks for reading!")
+//         break;
+//     default:
+//         alert("You have cero correct answers! Start reading before it's too late!")
+//         break;    
+// }
 
 
 // /*Practicando algoritmo y simulador interactivo*/

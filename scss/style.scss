@@ -389,7 +389,7 @@ a {
 
 .option-button:hover {
   color: #111;
-  cursor: url("/css/multimedia/UF5AQGXBS5H2NH4KOLDE3SNQLQ.webp"), auto;
+  cursor: pointer;
 }
 
 .correct{
@@ -432,9 +432,13 @@ a {
   
   .correct:hover {
     color: #111;
-    cursor: url("/css/multimedia/UF5AQGXBS5H2NH4KOLDE3SNQLQ.webp"), auto;
+    cursor: pointer;
   }
 
+  .doris{
+    background-color: yellow;
+    color: yellow;
+  }
 
 #result {
   display: flex;
