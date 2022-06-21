@@ -435,9 +435,10 @@ a {
   cursor: pointer;
 }
 
-.doris {
-  background-color: yellow;
-  color: yellow;
+.disable {
+  pointer-events: none;
+  text-decoration: none;
+  color: gray;
 }
 
 #result {

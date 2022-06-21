@@ -8,36 +8,79 @@ ARROJANDO MENSAJES DIFERENTES DE ACUERDO AL RESULTADO OBTENIDO.*/
 /*Tercero debo pedirle a JS que sume todos los puntos obtenidos si el usuario selecciono correctas*/
 /*Cuarto debo mostrarle al usuario un mensaje de acuerdo al puntaje obtenido*/
 
-//Tambien tengo que inhabilitar que seleccione otra opcion de la misma pregunta cuando ya selecciono uno
+//Tambien tengo que inhabilitar que el usuario seleccione otra opcion
+//de la misma pregunta cuando ya selecciono uno
 
 
-const caramelo = document.getElementsByTagName("button");
-caramelo[0].addEventListener("click", function onClick(){
+const opciones = document.getElementsByTagName("button");
+opciones[0].addEventListener("click", function onClick(){
    console.log("");
 });
-for (const button of caramelo){
-    button.addEventListener("click", function onClick (){
+for (const button of opciones){
+    button.addEventListener("click", () => {
         button.style.backgroundColor = "purple";
+        button.style.borderBlockColor = "white";
         button.style.color = "white";
-    })
-}
+    })}
+    
+
+let correctas = [];
+let rtaCorrecta = document.querySelectorAll(".correct");
+
+function contador(){}
+rtaCorrecta.forEach( clickCorrectas =>{
+    clickCorrectas.addEventListener("click", ()=>{
+        if((contador)){
+            correctas.push(1);
+            console.log(correctas);
+          }   
+        })});
 
 
-let pepito = document.querySelectorAll(".correct");
-pepito.forEach( pedro =>{
-    pedro.addEventListener("click", ()=>{   
-    let contador = 0;
-    pepito.onClick = function (){
-        contador++;
-}    
-    console.log(contador);
-    })
-});
+let resultado = document.getElementById("result");
+resultado.addEventListener("click", () => {
+    switch(resultado) {
+        case 1:
+            //La idea es que no sean alertas las que aparezcan, sino mensajes ubicados en el centro de la pantalla :)
+            alert("You really need to keep reading pal!")
+            break;
+        case 2:
+            alert("You really need to keep reading pal!")
+            break;
+        case 3:
+            alert("You really need to keep reading pal!")
+            break;
+        case 4:
+            alert("Next time don't hesitate on the reading! Keep having a good track!")
+            break;
+        case 5:
+            alert("Halfway there! Stephen is watching you")
+            break;
+        case 6:
+            alert("The number of the devil! Keep reading pal!");
+            break;
+        case 7:
+            alert("Really good mark, but let's keep reading!")
+            break;
+        case 8:
+            alert("You are trying really hard to stop reading; but let's face it: it's difficult!")
+            break;
+        case 9:
+            alert("Almooost there! You are doing great!")
+            break;
+        case 10:
+            alert("Stephen King loves you! Thanks for reading!")
+            break;
+        default:
+            alert("You have cero correct answers! Start reading before it's too late!")
+            break;    
+    };
+})
 
 
-let botones = document.querySelectorAll(".option-button");
-botones.forEach( buenas =>{
-    buenas.addEventListener("click", ()=>{
+let incorrectas = document.querySelectorAll(".option-button");
+incorrectas.forEach( clickIncorrectas =>{
+    clickIncorrectas.addEventListener("click", ()=>{
         console.log("incorrecta");        
     })
 });
