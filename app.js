@@ -21,7 +21,8 @@ for (const button of opciones){
         button.style.backgroundColor = "purple";
         button.style.borderBlockColor = "white";
         button.style.color = "white";
-    })}
+    }
+)}
     
 
 let correctas = [];
@@ -32,14 +33,14 @@ rtaCorrecta.forEach( clickCorrectas =>{
     clickCorrectas.addEventListener("click", ()=>{
         if((contador)){
             correctas.push(1);
-            console.log(correctas);
+            console.log(correctas.length);
           }   
         })});
 
 
 let resultado = document.getElementById("result");
 resultado.addEventListener("click", () => {
-    switch(resultado) {
+    switch(correctas.length) {
         case 1:
             //La idea es que no sean alertas las que aparezcan, sino mensajes ubicados en el centro de la pantalla :)
             alert("You really need to keep reading pal!")
