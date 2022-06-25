@@ -21,8 +21,11 @@ for (const button of opciones){
         button.style.backgroundColor = "purple";
         button.style.borderBlockColor = "white";
         button.style.color = "white";
-    }
-)}
+        button.style.padding = "3%";
+        button.style.width = "50%"; 
+    })
+}
+
     
 
 let correctas = [];
@@ -42,42 +45,120 @@ let resultado = document.getElementById("result");
 resultado.addEventListener("click", () => {
     switch(correctas.length) {
         case 1:
-            //La idea es que no sean alertas las que aparezcan, sino mensajes ubicados en el centro de la pantalla :)
-            alert("You really need to keep reading pal!")
+            Swal.fire({
+                title: '- 1/10 correct answers -',
+                text: 'Lots of awesome stories out there, do not give up!',
+                imageUrl: 'https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2019/06/Maximum-Overdrive-Do-Stephen-King-Right.gif?resize=700%2C298&ssl=1',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+              })
             break;
         case 2:
-            alert("You really need to keep reading pal!")
+            Swal.fire({
+                title: '- 2/10 correct answers -',
+                text: 'Do not miss all the stories! Keep reading!',
+                imageUrl: 'https://c.tenor.com/KQYF-xmocFEAAAAC/ass-stephen-king.gif',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+              })
             break;
         case 3:
-            alert("You really need to keep reading pal!")
+            Swal.fire({
+                title: '- 3/10 correct answers -',
+                text: 'Love horror? Do not stop reading Stephen King!',
+                imageUrl: 'https://64.media.tumblr.com/66dd7eb92075f1029df10e3f3966a13f/tumblr_mxmcgnCjy31s39hlao2_r1_500.gifv',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+              })
             break;
         case 4:
-            alert("Next time don't hesitate on the reading! Keep having a good track!")
+            Swal.fire({
+                title: '- 4/10 correct answers -',
+                text: 'Lots to catch up on! Keep reading!',
+                imageUrl: 'https://pa1.narvii.com/6492/bb20c8d10575b3336b663103577263bc17616447_hq.gif',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+              })
             break;
         case 5:
-            alert("Halfway there! Stephen is watching you")
+            Swal.fire({
+                title: '- 5/10 correct answers -',
+                text: 'Halfway there, keep loving the horror!',
+                imageUrl: 'https://pa1.narvii.com/6492/8e0a54f4fc75a01cb71d9b750c48a61a67c6dc4a_hq.gif',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+              })
             break;
         case 6:
-            alert("The number of the devil! Keep reading pal!");
+            Swal.fire({
+                title: 'Sweet!',
+                text: 'Modal with a custom image.',
+                imageUrl: 'Horror still awaits, keep reading!',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+              })
             break;
         case 7:
-            alert("Really good mark, but let's keep reading!")
+            Swal.fire({
+                title: '- 7/10 correct answers -',
+                text: 'Stephen is wacthing you, keep reading!',
+                imageUrl: 'https://i.gifer.com/DUAa.mp4',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+              })
             break;
         case 8:
-            alert("You are trying really hard to stop reading; but let's face it: it's difficult!")
+            Swal.fire({
+                title: '- 8/10 correct answers -',
+                text: 'You are doing great, do not give up!',
+                imageUrl: 'https://www.cinepremiere.com.mx/wp-content/uploads/2020/01/Stephen-King-diversidad-%C3%93scar-2020.gif',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+              })
             break;
         case 9:
-            alert("Almooost there! You are doing great!")
+            Swal.fire({
+                title: '- 9/10 correct answers -',
+                text: 'Almost there! Keep reading!',
+                imageUrl: 'https://c.tenor.com/GgY1Pu035PAAAAAC/steven-king.gif', 
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+              })
             break;
         case 10:
-            alert("Stephen King loves you! Thanks for reading!")
+            Swal.fire({
+                title: '- 10/10 correct answers -',
+                text: 'Stephen is proud of you! Cheers!',
+                imageUrl: 'https://c.tenor.com/QwSKwEyV5FQAAAAC/stephen-king-it.gif',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+              })
             break;
         default:
-            alert("You have cero correct answers! Start reading before it's too late!")
+            Swal.fire({
+                title: '- 0/10 correct answers -',
+                text: 'Start reading! You wont regret it!',
+                imageUrl: 'https://booksrockmyworlddotcom.files.wordpress.com/2017/09/1prl0wp.gif?w=656&zoom=2',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+              })
             break;    
     };
 })
 
+let data = localStorage.getItem(JSON.stringify(resultado, ""));
+console.log(data);
 
 let incorrectas = document.querySelectorAll(".option-button");
 incorrectas.forEach( clickIncorrectas =>{

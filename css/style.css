@@ -12,6 +12,7 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   background: linear-gradient(to right, rgb(66, 18, 91), rgb(13, 56, 41), rgb(20, 6, 67));
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body::-webkit-scrollbar {
