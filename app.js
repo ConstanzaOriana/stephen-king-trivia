@@ -11,7 +11,6 @@ ARROJANDO MENSAJES DIFERENTES DE ACUERDO AL RESULTADO OBTENIDO.*/
 //Tambien tengo que inhabilitar que el usuario seleccione otra opcion
 //de la misma pregunta cuando ya selecciono uno
 
-
 const opciones = document.getElementsByTagName("button");
 opciones[0].addEventListener("click", function onClick(){
    console.log("");
@@ -21,8 +20,8 @@ for (const button of opciones){
         button.style.backgroundColor = "purple";
         button.style.borderBlockColor = "white";
         button.style.color = "white";
-        button.style.padding = "3%";
-        button.style.width = "50%"; 
+        button.style.cursor = "none";
+        button.style.fontSize = "xx-large";      
     })
 }
 
@@ -37,8 +36,15 @@ rtaCorrecta.forEach( clickCorrectas =>{
         if((contador)){
             correctas.push(1);
             console.log(correctas.length);
-          }   
-        })});
+            localStorage.setItem("resultado", JSON.stringify(correctas));
+            }   
+        }
+        
+    )
+});
+
+
+
 
 
 let resultado = document.getElementById("result");
@@ -107,8 +113,8 @@ resultado.addEventListener("click", () => {
         case 7:
             Swal.fire({
                 title: '- 7/10 correct answers -',
-                text: 'Stephen is wacthing you, keep reading!',
-                imageUrl: 'https://i.gifer.com/DUAa.mp4',
+                text: 'Stephen is watching you, keep reading!',
+                imageUrl: 'https://c.tenor.com/SpkdVyxTTToAAAAM/yep-stephen-king.gif',
                 imageWidth: 400,
                 imageHeight: 200,
                 imageAlt: 'Custom image',
@@ -157,8 +163,9 @@ resultado.addEventListener("click", () => {
     };
 })
 
-let data = localStorage.getItem(JSON.stringify(resultado, ""));
-console.log(data);
+
+
+
 
 let incorrectas = document.querySelectorAll(".option-button");
 incorrectas.forEach( clickIncorrectas =>{

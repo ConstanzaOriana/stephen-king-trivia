@@ -288,11 +288,12 @@ a {
   color: #82ffc9;
 }
 
-.i-dare-button {
+#i-dare-button {
   --green: #1BFD9C;
   font-size: 300%;
   font-family: dare;
-  margin-left: 40%;
+  width: 3%;
+  margin: auto;
   padding: 0.7em 2.7em;
   letter-spacing: 0.06em;
   position: relative;
@@ -306,7 +307,7 @@ a {
   box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
 }
 
-.i-dare-button:hover {
+#i-dare-button:hover {
   color: #82ffc9;
   box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
 }
@@ -339,8 +340,6 @@ a {
   margin-right: auto;
   box-shadow: #17C3B2;
   padding: 3%;
-  margin-left: auto;
-  margin-right: auto;
   font-family: fantasy;
   letter-spacing: 0.1em;
   font-weight: lighter;
@@ -368,6 +367,7 @@ a {
   font-size: 16px;
   transition: 1ms;
   color: #17C3B2;
+  z-index: 2;
 }
 
 .option-button::before {
@@ -434,12 +434,6 @@ a {
 .correct:hover {
   color: #111;
   cursor: pointer;
-}
-
-.disable {
-  pointer-events: none;
-  text-decoration: none;
-  color: gray;
 }
 
 #result {
