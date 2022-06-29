@@ -1,5 +1,3 @@
-
-
 @font-face {
   font-family: title;
   src: url(/css/fonts/Curse\ of\ the\ Zombie.ttf);
@@ -8,18 +6,14 @@
   font-family: dare;
   src: url(/css/fonts/BloodLust.ttf);
 }
-
 body {
   width: auto;
   margin: 0;
   overflow-y: scroll;
   overflow-x: hidden;
   background: linear-gradient(to right, rgb(66, 18, 91), rgb(13, 56, 41), rgb(20, 6, 67));
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
-  }
-
-
-
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 body::-webkit-scrollbar {
   width: 20px;
@@ -353,19 +347,11 @@ a {
   text-align: center;
   margin-bottom: 5%;
   color: #6b9e88;
-  position: relative;
-  z-index: 10;
-}
-
-.question-p{
-  margin-top: 3%;
-  margin-bottom: 8%;
 }
 
 .option-button {
   width: 23%;
-  display: -ms-inline-grid;
-  place-content: center;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   margin-left: 1.5%;
@@ -373,58 +359,42 @@ a {
   font-family: fantasy;
   padding: 2%;
   border: 2px solid #17C3B2;
-  position: inherit;
-  overflow: hidden;
   background-color: transparent;
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
-  transition: 1ms;
-  color: #17C3B2;
+  position: relative;
   z-index: 10;
-
 }
-
 
 .option-button:hover {
-  background-color: aquamarine;
   color: #111;
   cursor: pointer;
-  transition: 0.2s;
 }
 
-.correct{
+.correct {
   width: 23%;
-  display: -ms-inline-grid;
-  place-content: center;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1.5%;
-    margin-right: auto;
-    font-family: fantasy;
-    padding: 2%;
-    border: 2px solid #17C3B2;
-    position: inherit;
-    z-index: 0;
-    overflow: hidden;
-    background-color: transparent;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 16px;
-    transition: 1ms;
-    color: #17C3B2;
-  }
-  
- 
-  
-  .correct:hover {
-    background-color: aquamarine;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    transition: 0.2s;
-  }
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.5%;
+  margin-right: auto;
+  font-family: fantasy;
+  padding: 2%;
+  border: 2px solid #17C3B2;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #17C3B2;
+  position: relative;
+  z-index: 10;
+}
 
-
+.correct:hover {
+  color: #111;
+  cursor: pointer;
+}
 
 #result {
   display: flex;
@@ -458,5 +428,6 @@ a {
 }
 
 /*# sourceMappingURL=style.css.map */
-
 /*# sourceMappingURL=style.scss.map */
+
+/*# sourceMappingURL=css.map */

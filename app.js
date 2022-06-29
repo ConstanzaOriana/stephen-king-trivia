@@ -3,6 +3,7 @@ EN DONDE EL USUARIO JUEGUE A ADIVINAR LAS RESPUESTAS CORRECTAS
 Y LUEGO EL SITIO CUENTE LA CANTIDAD DE ACIERTOS 
 ARROJANDO MENSAJES DIFERENTES DE ACUERDO AL RESULTADO OBTENIDO.*/
 
+
 /*Primero debo determinar cuales son las respuestas correctas*/
 /*Segundo debo pedirle a JS que sume 1 punto cada vez que el usuario selecciona una correcta*/
 /*Tercero debo pedirle a JS que sume todos los puntos obtenidos si el usuario selecciono correctas*/
@@ -17,15 +18,25 @@ opciones[0].addEventListener("click", function onClick(){
 });
 for (const button of opciones){
     button.addEventListener("click", () => {
-        button.style.backgroundColor = "purple";
-        button.style.borderBlockColor = "white";
+        button.style.backgroundImage = "url(https://68.media.tumblr.com/dfb0e7b96e7c09bac72726c9306e5126/tumblr_o2egxy0wQs1rp0vkjo1_500.gif)";
+        button.style.backgroundPosition = "center";
         button.style.color = "white";
         button.style.cursor = "none";
-        button.style.fontSize = "xx-large";      
+        button.style.color = "black";
+        button.style.fontSize = "100px";
+        button.style.border = "none";
+        button.style.display = "flex";
+        button.style.justifyContent = "center";
+        button.style.alignItems = "center";
+        button.style.width = "95%";
+        button.style.height = "215px";
+        button.style.position = "absolute";  
+        button.style.zIndex = "100";
+        button.style.padding = "-10%";
+        button.style.marginTop= "-6%";
     })
-}
+};
 
-    
 
 let correctas = [];
 let rtaCorrecta = document.querySelectorAll(".correct");
@@ -42,8 +53,6 @@ rtaCorrecta.forEach( clickCorrectas =>{
         
     )
 });
-
-
 
 
 
