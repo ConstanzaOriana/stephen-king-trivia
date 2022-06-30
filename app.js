@@ -22,7 +22,7 @@ for (const button of opciones){
         button.style.backgroundPosition = "center";
         button.style.color = "white";
         button.style.cursor = "none";
-        button.style.color = "black";
+        button.style.color = "white";
         button.style.fontSize = "100px";
         button.style.border = "none";
         button.style.display = "flex";
