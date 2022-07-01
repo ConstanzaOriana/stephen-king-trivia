@@ -66,6 +66,8 @@ resultado.addEventListener("click", () => {
                 imageUrl: 'https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2019/06/Maximum-Overdrive-Do-Stephen-King-Right.gif?resize=700%2C298&ssl=1',
                 imageWidth: 400,
                 imageHeight: 200,
+                color: "white",
+                background: "rgb(20, 6, 67)",
                 imageAlt: 'Custom image',
               })
             break;
@@ -76,6 +78,8 @@ resultado.addEventListener("click", () => {
                 imageUrl: 'https://c.tenor.com/KQYF-xmocFEAAAAC/ass-stephen-king.gif',
                 imageWidth: 400,
                 imageHeight: 200,
+                color: "white",
+                background: "rgb(20, 6, 67)",
                 imageAlt: 'Custom image',
               })
             break;
@@ -86,6 +90,8 @@ resultado.addEventListener("click", () => {
                 imageUrl: 'https://64.media.tumblr.com/66dd7eb92075f1029df10e3f3966a13f/tumblr_mxmcgnCjy31s39hlao2_r1_500.gifv',
                 imageWidth: 400,
                 imageHeight: 200,
+                color: "white",
+                background: "rgb(20, 6, 67)",
                 imageAlt: 'Custom image',
               })
             break;
@@ -96,6 +102,8 @@ resultado.addEventListener("click", () => {
                 imageUrl: 'https://pa1.narvii.com/6492/bb20c8d10575b3336b663103577263bc17616447_hq.gif',
                 imageWidth: 400,
                 imageHeight: 200,
+                color: "white",
+                background: "rgb(20, 6, 67)",
                 imageAlt: 'Custom image',
               })
             break;
@@ -106,6 +114,8 @@ resultado.addEventListener("click", () => {
                 imageUrl: 'https://pa1.narvii.com/6492/8e0a54f4fc75a01cb71d9b750c48a61a67c6dc4a_hq.gif',
                 imageWidth: 400,
                 imageHeight: 200,
+                color: "white",
+                background: "rgb(20, 6, 67)",
                 imageAlt: 'Custom image',
               })
             break;
@@ -116,6 +126,8 @@ resultado.addEventListener("click", () => {
                 imageUrl: 'Horror still awaits, keep reading!',
                 imageWidth: 400,
                 imageHeight: 200,
+                color: "white",
+                background: "rgb(20, 6, 67)",
                 imageAlt: 'Custom image',
               })
             break;
@@ -126,6 +138,8 @@ resultado.addEventListener("click", () => {
                 imageUrl: 'https://c.tenor.com/SpkdVyxTTToAAAAM/yep-stephen-king.gif',
                 imageWidth: 400,
                 imageHeight: 200,
+                color: "white",
+                background: "rgb(20, 6, 67)",
                 imageAlt: 'Custom image',
               })
             break;
@@ -136,6 +150,8 @@ resultado.addEventListener("click", () => {
                 imageUrl: 'https://www.cinepremiere.com.mx/wp-content/uploads/2020/01/Stephen-King-diversidad-%C3%93scar-2020.gif',
                 imageWidth: 400,
                 imageHeight: 200,
+                color: "white",
+                background: "rgb(20, 6, 67)",
                 imageAlt: 'Custom image',
               })
             break;
@@ -146,6 +162,8 @@ resultado.addEventListener("click", () => {
                 imageUrl: 'https://c.tenor.com/GgY1Pu035PAAAAAC/steven-king.gif', 
                 imageWidth: 400,
                 imageHeight: 200,
+                color: "white",
+                background: "rgb(20, 6, 67)",
                 imageAlt: 'Custom image',
               })
             break;
@@ -156,6 +174,8 @@ resultado.addEventListener("click", () => {
                 imageUrl: 'https://c.tenor.com/QwSKwEyV5FQAAAAC/stephen-king-it.gif',
                 imageWidth: 400,
                 imageHeight: 200,
+                color: "white",
+                background: "rgb(20, 6, 67)",
                 imageAlt: 'Custom image',
               })
             break;
@@ -166,6 +186,8 @@ resultado.addEventListener("click", () => {
                 imageUrl: 'https://booksrockmyworlddotcom.files.wordpress.com/2017/09/1prl0wp.gif?w=656&zoom=2',
                 imageWidth: 400,
                 imageHeight: 200,
+                color: "white",
+                background: "rgb(20, 6, 67)",
                 imageAlt: 'Custom image',
               })
             break;    
