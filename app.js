@@ -12,6 +12,23 @@ ARROJANDO MENSAJES DIFERENTES DE ACUERDO AL RESULTADO OBTENIDO.*/
 //Tambien tengo que inhabilitar que el usuario seleccione otra opcion
 //de la misma pregunta cuando ya selecciono uno
 
+let botonGo = document.getElementById("i-dare-button");
+botonGo.addEventListener("click" , () =>
+Swal.fire({
+    title: 'You need to be +18 to play!',
+    text: "Continue?",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes, lets play!'
+  }).then((result) => {
+    (result.isConfirmed) ? Swal.fire('Awesome!', 'Good luck!', 'success') : Swal.fire('See you in a few years!', 'Keep loving books!', 'error');
+    }
+  )
+)
+
+
 const opciones = document.getElementsByTagName("button");
 opciones[0].addEventListener("click", function onClick(){
    console.log("");
@@ -208,6 +225,10 @@ incorrectas.forEach( clickIncorrectas =>{
 
 
 
+
+
+//EJERCICIOS DE PRACTICA EN CLASES
+
 // let correctAnswers = ["Bob", "The Green Mile", "Corgi", "Axe", "237", "Kathy Bates", "Chamberlain", "Church", "Blue", "Avoid nuclear war"];
 // }
 // let correctOption = document.getElementsByClassName("correct");
@@ -393,8 +414,6 @@ incorrectas.forEach( clickIncorrectas =>{
 
 
 
-
-//EJERCICIOS DE PRACTICA EN CLASES
 
 //  function calculadora (primerNum, segundoNum, operacion) {
 //     switch(operacion){
