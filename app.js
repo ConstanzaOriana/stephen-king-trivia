@@ -64,12 +64,15 @@ rtaCorrecta.forEach( clickCorrectas =>{
         if((contador)){
             correctas.push(1);
             console.log(correctas.length);
-            localStorage.setItem("resultado", JSON.stringify(correctas));
-            }   
-        }
+            localStorage.setItem("resultado", JSON.stringify([correctas]));
+            };            
+        })});
         
-    )
-});
+
+
+
+
+
 
 
 
