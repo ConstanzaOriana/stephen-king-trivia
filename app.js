@@ -3,7 +3,6 @@ EN DONDE EL USUARIO JUEGUE A ADIVINAR LAS RESPUESTAS CORRECTAS
 Y LUEGO EL SITIO CUENTE LA CANTIDAD DE ACIERTOS 
 ARROJANDO MENSAJES DIFERENTES DE ACUERDO AL RESULTADO OBTENIDO.*/
 
-
 /*Primero debo determinar cuales son las respuestas correctas*/
 /*Segundo debo pedirle a JS que sume 1 punto cada vez que el usuario selecciona una correcta*/
 /*Tercero debo pedirle a JS que sume todos los puntos obtenidos si el usuario selecciono correctas*/
@@ -27,7 +26,6 @@ Swal.fire({
     }
   )
 )
-
 
 const opciones = document.getElementsByTagName("button");
 opciones[0].addEventListener("click", function onClick(){
@@ -78,7 +76,7 @@ rtaCorrecta.forEach( clickCorrectas =>{
 
 let resultado = document.getElementById("result");
 resultado.addEventListener("click", () => {
-    switch(correctas.length) {
+        switch(correctas.length) {
         case 1:
             Swal.fire({
                 title: '- 1/10 correct answers -',
@@ -212,9 +210,21 @@ resultado.addEventListener("click", () => {
               })
             break;    
     };
-})
+    })
 
+    
+const promise = (game) => {
+    return new Promise ( (resolve, reject) => {
+        setTimeout ( () => {
+            game ? resolve("Game on") : reject("Game is not working")
+                }, 2000)
+            }
+            
+    )
+}
+console.log(promise(true));
 
+        
 
 
 
@@ -224,10 +234,6 @@ incorrectas.forEach( clickIncorrectas =>{
         console.log("incorrecta");        
     })
 });
-
-
-
-
 
 
 //EJERCICIOS DE PRACTICA EN CLASES
