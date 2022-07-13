@@ -33,7 +33,7 @@ opciones[0].addEventListener("click", function onClick(){
 });
 for (const button of opciones){
     button.addEventListener("click", () => {
-        button.style.backgroundImage = "url(https://68.media.tumblr.com/dfb0e7b96e7c09bac72726c9306e5126/tumblr_o2egxy0wQs1rp0vkjo1_500.gif)";
+        button.style.backgroundColor = "purple";
         button.style.backgroundPosition = "center";
         button.style.color = "white";
         button.style.cursor = "none";
