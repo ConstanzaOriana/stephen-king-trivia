@@ -1,15 +1,4 @@
-/*CONSTRUI ESTA PAGINA PARA HACER FUNCIONAR MEDIANTE JavaScript UNA DINAMICA DE TRIVIA
-EN DONDE EL USUARIO JUEGUE A ADIVINAR LAS RESPUESTAS CORRECTAS
-Y LUEGO EL SITIO CUENTE LA CANTIDAD DE ACIERTOS 
-ARROJANDO MENSAJES DIFERENTES DE ACUERDO AL RESULTADO OBTENIDO.*/
-
-/*Primero debo determinar cuales son las respuestas correctas*/
-/*Segundo debo pedirle a JS que sume 1 punto cada vez que el usuario selecciona una correcta*/
-/*Tercero debo pedirle a JS que sume todos los puntos obtenidos si el usuario selecciono correctas*/
-/*Cuarto debo mostrarle al usuario un mensaje de acuerdo al puntaje obtenido*/
-
-//Tambien tengo que inhabilitar que el usuario seleccione otra opcion
-//de la misma pregunta cuando ya selecciono uno
+// Operadores avanzados
 
 let botonGo = document.getElementById("i-dare-button");
 botonGo.addEventListener("click" , () =>
@@ -26,6 +15,8 @@ Swal.fire({
     }
   )
 )
+
+// Functions & ciclos
 
 const opciones = document.getElementsByTagName("button");
 opciones[0].addEventListener("click", function onClick(){
@@ -52,6 +43,7 @@ for (const button of opciones){
     })
 };
 
+// Array & conditionals
 
 let correctas = [];
 let rtaCorrecta = document.querySelectorAll(".correct");
@@ -65,15 +57,9 @@ rtaCorrecta.forEach( clickCorrectas =>{
             localStorage.setItem("resultado", JSON.stringify([correctas]));
             };            
         })});
+
+// Results
         
-
-
-
-
-
-
-
-
 let resultado = document.getElementById("result");
 resultado.addEventListener("click", () => {
         switch(correctas.length) {
@@ -212,7 +198,8 @@ resultado.addEventListener("click", () => {
     };
     })
 
-    
+// Promise & ASYNC
+
 const promise = (game) => {
     return new Promise ( (resolve, reject) => {
         setTimeout ( () => {
@@ -224,22 +211,35 @@ const promise = (game) => {
 }
 console.log(promise(true));
 
-        
+// Fetch
 
+const traerDatos = async() => {
+    const result = await fetch('./data.json');
+    const data = await result.json();
 
+    return data;
+}
+const correctAnswers = traerDatos();
+console.log(correctAnswers);
+
+//Respuestas incorrectas
 
 let incorrectas = document.querySelectorAll(".option-button");
 incorrectas.forEach( clickIncorrectas =>{
     clickIncorrectas.addEventListener("click", ()=>{
-        console.log("incorrecta");        
+        console.log("Respuesta incorrecta");        
     })
 });
 
 
+
+
+
+
+
 //EJERCICIOS DE PRACTICA EN CLASES
 
-// let correctAnswers = ["Bob", "The Green Mile", "Corgi", "Axe", "237", "Kathy Bates", "Chamberlain", "Church", "Blue", "Avoid nuclear war"];
-// }
+
 // let correctOption = document.getElementsByClassName("correct");
 // correctOption.addEventListener("click", correctAnswers);
 
