@@ -70,7 +70,6 @@ rtaCorrecta.forEach( clickCorrectas =>{
                                 imageUrl: 'https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2019/06/Maximum-Overdrive-Do-Stephen-King-Right.gif?resize=700%2C298&ssl=1',
                                 title: '- 1/10 correct answers -',
                                 text: 'Left a question behind? You can try again! The new score will be added up to your new result!',
-                                footer: '<a href="#test">Try again!</a>',
                             })
                             break;
                         case 2:
@@ -80,7 +79,6 @@ rtaCorrecta.forEach( clickCorrectas =>{
                                 imageUrl: 'https://c.tenor.com/KQYF-xmocFEAAAAC/ass-stephen-king.gif',
                                 title: '- 2/10 correct answers -',
                                 text: 'Left a question behind? You can try again! The new score will be added up to your new result!',
-                                footer: '<a href="#test">Try again!</a>'
                             })
                             break;
                         case 3:
@@ -90,7 +88,6 @@ rtaCorrecta.forEach( clickCorrectas =>{
                                 imageUrl: 'https://64.media.tumblr.com/66dd7eb92075f1029df10e3f3966a13f/tumblr_mxmcgnCjy31s39hlao2_r1_500.gifv',
                                 title: '- 3/10 correct answers -',
                                 text: 'Left a question behind? You can try again! The new score will be added up to your new result!',
-                                footer: '<a href="#test">Try again!</a>'
                             })
                             break;
                         case 4:
@@ -100,7 +97,6 @@ rtaCorrecta.forEach( clickCorrectas =>{
                                 imageUrl: 'https://pa1.narvii.com/6492/bb20c8d10575b3336b663103577263bc17616447_hq.gi',
                                 title: '- 4/10 correct answers -',
                                 text: 'Left a question behind? You can try again! The new score will be added up to your new result!',
-                                footer: '<a href="#test">Try again!</a>'
                             })
                             break;
                         case 5:
@@ -110,7 +106,6 @@ rtaCorrecta.forEach( clickCorrectas =>{
                                 imageUrl: 'https://pa1.narvii.com/6492/8e0a54f4fc75a01cb71d9b750c48a61a67c6dc4a_hq.gif',
                                 title: '- 5/10 correct answers -',
                                 text: 'Left a question behind? You can try again! The new score will be added up to your new result!',
-                                footer: '<a href="#test">Try again!</a>'
                             })
                             break;
                         case 6:
@@ -120,7 +115,6 @@ rtaCorrecta.forEach( clickCorrectas =>{
                                 imageUrl: 'https://www.cinepremiere.com.mx/wp-content/uploads/2020/01/Stephen-King-diversidad-%C3%93scar-2020.gif',
                                 title: '- 6/10 correct answers -',
                                 text: 'Left a question behind? You can try again! The new score will be added up to your new result!',
-                                footer: '<a href="#test">Try again!</a>'
                             })
                             break;
                         case 7:
@@ -130,7 +124,6 @@ rtaCorrecta.forEach( clickCorrectas =>{
                                 imageUrl: 'https://c.tenor.com/GgY1Pu035PAAAAAC/steven-king.gif',
                                 title: '- 7/10 correct answers -',
                                 text: 'Left a question behind? You can try again! The new score will be added up to your new result!',
-                                footer: '<a href="#test">Try again!</a>'
                             })
                             break;
                         case 8:
@@ -140,7 +133,6 @@ rtaCorrecta.forEach( clickCorrectas =>{
                                 imageUrl: 'https://c.tenor.com/QwSKwEyV5FQAAAAC/stephen-king-it.gif',
                                 title: '- 8/10 correct answers -',
                                 text: 'Left a question behind? You can try again! The new score will be added up to your new result!',
-                                footer: '<a href="#test">Try again!</a>',
                             })
                             break;
                         case 9:
@@ -150,7 +142,6 @@ rtaCorrecta.forEach( clickCorrectas =>{
                                 imageUrl: 'https://booksrockmyworlddotcom.files.wordpress.com/2017/09/1prl0wp.gif?w=656&zoom=2',
                                 title: '- 9/10 correct answers -',
                                 text: 'Left a question behind? You can try again! The new score will be added up to your new result!',
-                                footer: '<a href="#test">Try again!</a>'
                             })
                             break;
                         case 10:
