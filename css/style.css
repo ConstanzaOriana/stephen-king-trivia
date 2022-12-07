@@ -494,10 +494,12 @@ a {
     justify-content: center;
     align-items: center;
     font-size: xx-large;
+    margin-bottom: 100px;
   }
 
   .can-you-p {
     font-size: x-large;
+    margin-bottom: 100px;
   }
 
   #i-dare-button {
@@ -522,11 +524,13 @@ a {
 
   #result {
     width: 90%;
+    font-size: large;
   }
 
   .footer {
     width: 80%;
     font-size: medium;
+    margin-top: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */

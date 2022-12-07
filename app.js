@@ -1,34 +1,27 @@
 let testSection = document.getElementById("test");
 
 let botonGo = document.getElementById("i-dare-button");
-botonGo.addEventListener("click" , () =>
-Swal.fire({
-    title: 'You need to be +18 to play!',
-    text: "Continue?",
-    icon: 'warning',
-    showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
-    confirmButtonText: "Yes, let's play!",
-    cancelButtonText: 'Not yet',
-}).then((result) => {
-    if(result.isConfirmed){
-        testSection.style.display = "flex"
-        testSection.style.width = "100%"
-        testSection.style.justifyContent = "center"
-        testSection.style.flexDirection = "column"
-        testSection.style.marginTop = "5%"
-    } else{
-        Swal.fire("See you soon!")
-    }
-}
-)  
-
-// width: 100%;
-// display: flex;
-// justify-content: center;
-// flex-direction: column;
-// margin-top: 5%;
+    botonGo.addEventListener("click" , () =>
+    Swal.fire({
+        title: 'You need to be +18 to play!',
+        text: "Continue?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: "Yes, let's play!",
+        cancelButtonText: 'Not yet',
+    }).then((result) => {
+        if(result.isConfirmed){
+            testSection.style.display = "flex"
+            testSection.style.width = "100%"
+            testSection.style.justifyContent = "center"
+            testSection.style.flexDirection = "column"
+            testSection.style.marginTop = "5%"
+        } else{
+            Swal.fire("See you soon!")
+        }
+    })      
 )
 
 const opciones = document.getElementsByTagName("button");
