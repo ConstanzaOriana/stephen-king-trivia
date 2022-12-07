@@ -497,6 +497,7 @@ a {
 }
 
 @media screen and (max-width: 1440px) {
+  
 html{
   width: auto;
   margin: 0;
@@ -514,6 +515,7 @@ html{
   .can-you-p{
     font-size:x-large;
     margin-bottom: 50px;
+    width: 90%;
   }
 
   #i-dare-button{
@@ -524,7 +526,7 @@ html{
     margin: auto;
     font-size: xx-small;
     margin-left: 25px;
-    margin-top: 200px;
+    margin-top: 100px;
   }
 
   .article-test{

@@ -34,7 +34,7 @@ for (const button of opciones){
         button.style.color = "white";
         button.style.cursor = "none";
         button.style.color = "white";
-        button.style.fontSize = "80px";
+        button.style.fontSize = "40px";
         button.style.border = "none";
         button.style.display = "flex";
         button.style.justifyContent = "center";
@@ -45,25 +45,8 @@ for (const button of opciones){
         button.style.zIndex = "100";
         button.style.padding = "-10%";
         button.style.marginTop= "-6%";
-        addEventListener("resize", () =>{
-            document.getElementsByTagName("button");
-            if(innerWidth > 900) {
-                button.style.width = "100%";
-                button.style.height = "100px";
-                button.style.display = "flex";
-                button.style.justifyContent = "center";
-                button.style.marginTop = "-13%";
-                button.style.fontSize = "40px";
-                button.style.backgroundColor = "yellow";
-                document.body.style.fontSize = "large"
-            }
-        })
     })
 };
-
-
-
-
 
 let correctas = [];
 let rtaCorrecta = document.querySelectorAll(".correct");
