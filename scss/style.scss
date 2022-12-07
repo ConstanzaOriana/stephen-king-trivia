@@ -505,20 +505,22 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size:xx-large;
+    font-size:xx-large
   }
 
   .can-you-p{
-    font-size:medium;
+    font-size:x-large;
   }
 
   #i-dare-button{
-    font-size: small;
+    font-size:large;
   }
 
   .article-test{
   display: flex;
   flex-direction: column;  
+  justify-content: center;
+  align-items: center;
 }
 
   .question-p {
@@ -527,11 +529,16 @@ html{
 
   .correct, .option-button{
     font-size: xx-small;
+    margin: 10px;
+  }
+
+  #result{
+    width: 90%;
   }
 
   .footer{
     width: 80%;
-    font-size: xx-small;
+    font-size:medium
   }
 }
 
