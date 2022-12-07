@@ -1,9 +1,4 @@
-
-
-// function allowGame () {
- let testSection = document.getElementById("test")
-//  testSection.classList.add("test")
-
+let testSection = document.getElementById("test");
 
 let botonGo = document.getElementById("i-dare-button");
 botonGo.addEventListener("click" , () =>
@@ -66,11 +61,15 @@ for (const button of opciones){
                 button.style.justifyContent = "center";
                 button.style.marginTop = "-13%";
                 button.style.fontSize = "40px";
+                button.style.backgroundColor = "yellow";
                 document.body.style.fontSize = "large"
             }
         })
     })
 };
+
+
+
 
 
 let correctas = [];

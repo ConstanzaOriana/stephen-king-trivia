@@ -484,17 +484,42 @@ a {
 }
 
 @media screen and (max-width: 1440px) {
-  body {
-    background: rgb(10, 57, 38);
-    font-size: large;
+  html {
+    width: 100%;
+    height: 100%;
   }
 
-  #test {
-    width: 100%;
+  h1 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+  }
+
+  .can-you-p {
+    font-size: medium;
+  }
+
+  #i-dare-button {
+    font-size: small;
+  }
+
+  .article-test {
+    display: flex;
     flex-direction: column;
-    margin-top: 5%;
+  }
+
+  .question-p {
+    font-size: x-small;
+  }
+
+  .correct, .option-button {
+    font-size: xx-small;
+  }
+
+  .footer {
+    width: 80%;
+    font-size: xx-small;
   }
 }
 /*# sourceMappingURL=style.css.map */
