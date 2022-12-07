@@ -179,11 +179,12 @@ rtaCorrecta.forEach( clickCorrectas =>{
                                 })
                             break;
                             }}
-                        )}
+                        )
                     }
                 }
-            )
-        }
+            }
+        )
+    }
 );
 
 
